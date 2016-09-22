@@ -19,6 +19,11 @@ router.get("/license",function(req,res){
 router.get("/certificate",function(req,res){
   res.sendFile(path + "certificate.html");
 });
+
+router.get("/katalog",function(req,res){
+  res.sendFile(path + "katalog.html");
+});
+
 /*
 router.get("/images",function(req,res){
   res.sendFile(__dirname + '/images');
