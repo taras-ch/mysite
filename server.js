@@ -33,6 +33,11 @@ router.get("/certificate.html",function(req,res){
 router.get("/katalog.html",function(req,res){
   res.render(path + "katalog.ejs");
 });
+
+router.get("/katalog",function(req,res){
+  res.sendFile(path + "katalog.html");
+});
+
 /*
 router.get("/images",function(req,res){
   res.sendFile(__dirname + '/images');
